@@ -1,11 +1,4 @@
-//
-//  main.swift
-//  AdvancedSwift
-//
-//  Created by 박지성 on 3/17/25.
-//
-
-import Foundation
-
-print("Hello, World!")
-
+// MARK: - 필수 문제 1
+print("********** 필수 문제 1 **********")
+print(sum(4, 2))
+calculate(closure: sum, a: 42, b: 8)
