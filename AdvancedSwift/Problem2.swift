@@ -7,7 +7,12 @@ let chaining = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     .map { String($0) }
 
 func myMap(array: [Int], closure: (Int) -> String) -> [String] {
-    array.map(closure)
+    var newArray: [String] = []
+    for number in array {
+        newArray.append(closure(number))
+    }
+
+    return newArray
 }
 
 let myMapResult = myMap(array: [1, 2, 3, 4, 5]) {
